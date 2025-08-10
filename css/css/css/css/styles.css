@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>About — OXE Landscaping Ltd</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html"><img src="assets/logo.svg" alt="Logo" width="160" height="36"/></a>
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+  <nav class="nav" aria-label="Primary">
+    <a href="services.html">Services</a><a href="projects.html">Projects</a><a href="about.html">About</a><a class="btn" href="contact.html">Get a quote</a>
+  </nav>
+</header>
+<main class="page">
+  <h1>About OXE Landscaping Ltd</h1>
+  <p>We’re a friendly, detail-driven landscaping team delivering reliable quality. We listen carefully, plan thoroughly, and leave every site spotless.</p>
+  <div class="split">
+    <div>
+      <h2>Why choose us</h2>
+      <ul><li>Transparent quotes and schedules</li><li>Excellent communication</li><li>Quality materials from trusted suppliers</li><li>Respect for neighbours and access</li></ul>
+    </div>
+    <div class="card">
+      <h3>Accreditations & Insurance</h3>
+      <p>We carry full public liability insurance. Waste carrier licence number: <em>add here</em>.</p>
+    </div>
+  </div>
+</main>
+<footer class="site-footer"><p class="copyright">© <span id="y"></span> OXE Landscaping Ltd.</p></footer>
+<script src="js/main.js" defer></script><script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body></html>
