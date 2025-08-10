@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Projects — OXE Landscaping Ltd</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html"><img src="assets/logo.svg" alt="Logo" width="160" height="36"/></a>
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+  <nav class="nav" aria-label="Primary">
+    <a href="services.html">Services</a><a href="projects.html">Projects</a><a href="about.html">About</a><a class="btn" href="contact.html">Get a quote</a>
+  </nav>
+</header>
+<main class="page">
+  <h1>Projects</h1>
+  <p>Photos coming soon. Replace the placeholders below with your project images and descriptions.</p>
+  <div class="gallery" role="list">
+    <figure role="listitem"><img src="assets/placeholder.svg" alt="Project 1"/><figcaption>Project 1: Short description.</figcaption></figure>
+    <figure role="listitem"><img src="assets/placeholder.svg" alt="Project 2"/><figcaption>Project 2: Short description.</figcaption></figure>
+    <figure role="listitem"><img src="assets/placeholder.svg" alt="Project 3"/><figcaption>Project 3: Short description.</figcaption></figure>
+    <figure role="listitem"><img src="assets/placeholder.svg" alt="Project 4"/><figcaption>Project 4: Short description.</figcaption></figure>
+  </div>
+</main>
+<footer class="site-footer"><p class="copyright">© <span id="y"></span> OXE Landscaping Ltd.</p></footer>
+<script src="js/main.js" defer></script><script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body></html>
