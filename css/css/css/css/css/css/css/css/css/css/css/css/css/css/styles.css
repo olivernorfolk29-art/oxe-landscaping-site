@@ -1,0 +1,11 @@
+{
+  "name": "OXE Landscaping Ltd",
+  "short_name": "OXE",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#113b1f",
+  "icons": [
+    { "src": "assets/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
