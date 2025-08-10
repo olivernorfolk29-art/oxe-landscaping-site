@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact — OXE Landscaping Ltd</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html"><img src="assets/logo.svg" alt="Logo" width="160" height="36"/></a>
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+  <nav class="nav" aria-label="Primary">
+    <a href="services.html">Services</a><a href="projects.html">Projects</a><a href="about.html">About</a><a class="btn" href="contact.html">Get a quote</a>
+  </nav>
+</header>
+<main class="page">
+  <h1>Contact</h1>
+  <p>Use the form to request a quote. We aim to reply within one working day.</p>
+  <div class="contact-grid">
+    <form class="card" id="contact-form" novalidate>
+      <label>Full name<input type="text" name="name" autocomplete="name" required /></label>
+      <label>Email<input type="email" name="email" autocomplete="email" required /></label>
+      <label>Phone<input type="tel" name="phone" autocomplete="tel" /></label>
+      <label>Postcode / Town<input type="text" name="location" /></label>
+      <label>Service interested in
+        <select name="service">
+          <option>Garden design</option><option>Patios & paving</option><option>Fencing & decking</option>
+          <option>Lawn & turf</option><option>Planting & beds</option><option>Maintenance</option><option>Other</option>
+        </select>
+      </label>
+      <label>Message<textarea name="message" rows="5" required></textarea></label>
+      <div class="form-actions">
+        <button type="submit" class="btn">Send enquiry</button>
+        <p class="muted small">By submitting you agree to our <a href="privacy.html">privacy policy</a>.</p>
+      </div>
+      <output id="form-status" role="status" aria-live="polite"></output>
+    </form>
+    <aside>
+      <div class="card"><h2>Call us</h2><p><a href="tel:01234567890">01234 567890</a><br/><a href="mailto:hello@oxelandscaping.co.uk">hello@oxelandscaping.co.uk</a></p><p>Serving: Gloucestershire • Wiltshire • Bristol</p></div>
+      <div class="card"><h2>Hours</h2><ul class="hours"><li>Mon–Fri: 08:00–18:00</li><li>Sat: 09:00–13:00</li><li>Sun: Closed</li></ul></div>
+    </aside>
+  </div>
+</main>
+<footer class="site-footer"><p class="copyright">© <span id="y"></span> OXE Landscaping Ltd.</p></footer>
+<script src="js/main.js" defer></script>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body></html>
