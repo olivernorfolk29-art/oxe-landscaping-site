@@ -1,0 +1,37 @@
+// Mobile nav
+const toggle = document.querySelector('.nav-toggle');
+const nav = document.querySelector('.nav');
+if (toggle && nav) {
+  toggle.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', String(isOpen));
+  });
+}
+
+// Contact form (demo: opens email app – swap for Formspree if you like)
+const form = document.getElementById('contact-form');
+const statusEl = document.getElementById('form-status');
+if (form && statusEl) {
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const data = Object.fromEntries(new FormData(form).entries());
+    if (!data.name || !data.email || !data.message) {
+      statusEl.textContent = 'Please fill in name, email and message.';
+      statusEl.style.color = '#b45309';
+      return;
+    }
+    statusEl.textContent = 'Thanks! Preparing your email…';
+    statusEl.style.color = '#155e2b';
+    const mailto = `mailto:${encodeURIComponent('hello@oxelandscaping.co.uk')}?subject=${encodeURIComponent('New enquiry from ' + data.name)}&body=${encodeURIComponent(
+`Name: ${data.name}
+Email: ${data.email}
+Phone: ${data.phone || ''}
+Location: ${data.location || ''}
+Service: ${data.service || ''}
+
+Message:
+${data.message}`)}`;
+    window.location.href = mailto;
+    form.reset();
+  });
+}
