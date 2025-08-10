@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Privacy Policy — OXE Landscaping Ltd</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<header class="site-header"><a class="logo" href="index.html"><img src="assets/logo.svg" alt="Logo" width="160" height="36"/></a></header>
+<main class="page">
+  <h1>Privacy Policy</h1>
+  <p>This static site does not store personal data. If you email or call us, your details will be used only to respond to your enquiry. Replace this text with your actual policy before going live.</p>
+</main>
+<footer class="site-footer"><p class="copyright">© <span id="y"></span> OXE Landscaping Ltd.</p></footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body></html>
