@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Services — OXE Landscaping Ltd</title>
+<meta name="description" content="All the landscaping and garden services offered by OXE Landscaping Ltd." />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html"><img src="assets/logo.svg" alt="Logo" width="160" height="36"/></a>
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+  <nav class="nav" aria-label="Primary">
+    <a href="services.html">Services</a><a href="projects.html">Projects</a><a href="about.html">About</a><a class="btn" href="contact.html">Get a quote</a>
+  </nav>
+</header>
+<main class="page">
+  <h1>Services</h1>
+  <p>We provide end-to-end landscaping: design, build and ongoing maintenance. All work is fully insured and guaranteed.</p>
+  <div class="service-grid">
+    <section><h2>Garden & Planting Design</h2><ul><li>Concept sketches and mood boards</li><li>Planting plans and schedules</li><li>Drainage and levels considered</li></ul></section>
+    <section><h2>Hard Landscaping</h2><ul><li>Patios, paths, edging and steps</li><li>Retaining walls and raised beds</li><li>Driveways and block paving</li></ul></section>
+    <section><h2>Fencing, Decking & Structures</h2><ul><li>Closeboard, featheredge and decorative panels</li><li>Composite/softwood decking</li><li>Pergolas, screens and gates</li></ul></section>
+    <section><h2>Lawn Care & Turfing</h2><ul><li>Ground prep and topsoil</li><li>Rolled turf and aftercare</li><li>Artificial grass options</li></ul></section>
+    <section><h2>Maintenance</h2><ul><li>Hedge cutting and pruning</li><li>Seasonal tidy-ups</li><li>Regular contracts for estates</li></ul></section>
+    <section class="callout"><h2>Get a tailored quote</h2><p>Send photos and a rough size, and we’ll provide an estimate within 48 hours.</p><a class="btn" href="contact.html">Request a quote</a></section>
+  </div>
+</main>
+<footer class="site-footer"><p class="copyright">© <span id="y"></span> OXE Landscaping Ltd.</p></footer>
+<script src="js/main.js" defer></script><script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body></html>
